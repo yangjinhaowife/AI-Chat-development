@@ -1,0 +1,68 @@
+.web-scraper {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.scraper-header {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.url-manager {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.url-input-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.batch-input {
+  margin-bottom: 10px;
+}
+
+.single-url-input {
+  display: flex;
+  gap: 10px;
+}
+
+.url-list {
+  margin-bottom: 20px;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.results {
+  margin-top: 20px;
+}
+
+.results-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.results h3 {
+  margin: 0;
+}
+
+.results h4 {
+  margin: 0;
+  color: #1890ff;
+}
+
+.results p {
+  margin: 5px 0;
+  color: #666;
+}
+
+.ant-modal-body {
+  max-height: 70vh;
+  overflow-y: auto;
+} 

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>AI Chat Assistant</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="model-selector">
+                <select id="modelSelect">
+                    <option value="glm-4">GLM-4</option>
+                </select>
+            </div>
+            <button id="newChatBtn" class="new-chat-btn">新建对话</button>
+        </div>
+        
+        <div class="chat-container" id="chatContainer">
+            <!-- 聊天消息将在这里动态添加 -->
+        </div>
+        
+        <div class="input-container">
+            <div class="button-group">
+                <button id="uploadBtn" class="tool-btn">
+                    <span class="icon">📎</span>
+                </button>
+                <button id="historyBtn" class="tool-btn">
+                    <span class="icon">📜</span>
+                </button>
+            </div>
+            <textarea id="userInput" placeholder="输入您的问题..."></textarea>
+            <button id="sendButton">发送</button>
+        </div>
+    </div>
+
+    <!-- 历史记录对话框 -->
+    <div id="historyModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>历史对话记录</h2>
+                <span class="close">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div id="historyList" class="history-list">
+                    <!-- 历史记录将在这里动态添加 -->
+                </div>
+                <div class="important-chats-section">
+                    <div class="section-header">
+                        <h3>重要对话</h3>
+                        <button id="newFolderBtn" class="small-btn">新建文件夹</button>
+                    </div>
+                    <div id="importantChats" class="important-chats">
+                        <!-- 重要对话文件夹将在这里动态添加 -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 文件上传隐藏input -->
+    <input type="file" id="fileInput" style="display: none">
+    
+    <script src="script.js"></script>
+</body>
+</html> 
